@@ -6,14 +6,12 @@ The examples require Docker Desktop in running in the background.
 
 ## Automatic start-up
 
-Examples can be started using the provided yaml-file. For example: 
+Examples can be started using the provided yaml-file. Command syntax is: ```docker-compose -f <filename> up```. For example: 
 ```
-docker-compose -f .\filename.yaml up
+docker-compose -f .\pushpull_example.yaml up
 ```
 
-This will (first build and) start the configured containers. 
-
-Then, typing <kbd>Ctrl-C</kbd> several times stops the example running. 
+This will (first build and) start the configured containers. Then, typing <kbd>Ctrl-C</kbd> several times stops the example running. 
 
 ## Manual start-up
 
