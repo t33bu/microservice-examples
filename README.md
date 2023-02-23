@@ -2,7 +2,7 @@
 
 This repository contains example containers using different technology stacks and communication patterns for microservices.
 
-The examples require Docker Desktop in running in the background.
+The examples require Docker Desktop running in the background.
 
 ## Automatic start-up
 
