@@ -13,6 +13,8 @@ docker-compose -f .\pushpull_example.yaml up
 
 This will (first build and) start the configured containers. Then, typing <kbd>Ctrl-C</kbd> several times stops the example running. 
 
+Note! This example does not setup the private network, required for the containers to communicatye with each other. 
+
 ## Manual start-up
 
 Individual containers can also be started using command line with additional steps:
