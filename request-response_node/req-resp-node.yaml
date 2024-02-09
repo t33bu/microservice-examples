@@ -1,0 +1,12 @@
+version: '3'
+services:
+  server:
+    build: 
+      context: .
+      dockerfile: node_server.Dockerfile
+    image: node_req_server
+  client:
+    build: 
+      context: .
+      dockerfile: node_client.Dockerfile
+    image: node_req_client
