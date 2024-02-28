@@ -1,0 +1,15 @@
+version: '3'
+services:
+  server:
+    build: 
+      context: .
+      dockerfile: server.Dockerfile
+    image: rep_server
+  client:
+    build: 
+      context: .
+      dockerfile: client.Dockerfile
+    image: req_client
+
+
+
