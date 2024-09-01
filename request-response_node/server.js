@@ -16,5 +16,5 @@ http.createServer((req,res) => {
     res.end();
     sensor_data["eventId"] = sensor_data["eventId"] + 1;
 }).listen(port,() => {
-    console.log(`Server in running on port ${port}`);
+    console.log(`Server is running on port ${port}`);
 });
