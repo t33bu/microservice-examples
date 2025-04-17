@@ -1,0 +1,24 @@
+version: '3.1'
+services:
+  publisher:
+    build: 
+      context: .
+      dockerfile: publisher.Dockerfile
+    networks: 
+      - pubsub
+    image: publisher
+  subscriber:
+    build: 
+      context: .
+      dockerfile: subscriber.Dockerfile
+    networks:
+      - pubsub
+    image: subscriber
+
+networks:
+  pubsub:
+    driver: bridge
+
+
+
+
