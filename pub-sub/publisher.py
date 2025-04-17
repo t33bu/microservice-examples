@@ -4,7 +4,7 @@ import random
 
 context = zmq.Context()
 socket = context.socket(zmq.PUB)
-socket.connect("tcp://subscriber:5555") 
+socket.bind("tcp://*:5555")
 
 topic = "temperature"
 print(f"Publish to topic: {topic}")

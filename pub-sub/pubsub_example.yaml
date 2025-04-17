@@ -6,6 +6,7 @@ services:
       dockerfile: publisher.Dockerfile
     networks: 
       - pubsub
+    hostname: publisher
     image: publisher
   subscriber:
     build: 
@@ -13,6 +14,7 @@ services:
       dockerfile: subscriber.Dockerfile
     networks:
       - pubsub
+    hostname: subscriber
     image: subscriber
 
 networks:

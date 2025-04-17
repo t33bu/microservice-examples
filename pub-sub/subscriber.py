@@ -2,7 +2,7 @@ import zmq
 
 context = zmq.Context()
 socket = context.socket(zmq.SUB)
-socket.bind("tcp://*:5555")
+socket.connect("tcp://publisher:5555") 
 
 topic = "temperature"
 socket.setsockopt_string(zmq.SUBSCRIBE, topic)
